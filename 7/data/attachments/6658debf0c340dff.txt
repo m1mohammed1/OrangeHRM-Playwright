@@ -1,0 +1,1 @@
+INFO: Record 'Global QA Summit 2025' not found. Skipping deletion.

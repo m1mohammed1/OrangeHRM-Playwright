@@ -1,0 +1,1 @@
+INFO: Record 'Decline Candidate' not found. Skipping deletion.

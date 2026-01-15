@@ -1,0 +1,1 @@
+INFO: Record 'ISTQB Foundation' not found. Skipping deletion.

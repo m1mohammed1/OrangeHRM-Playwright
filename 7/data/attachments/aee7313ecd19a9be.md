@@ -1,0 +1,171 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - generic [ref=e113]:
+            - heading "Leave" [level=6] [ref=e114]
+            - heading "/ Reports" [level=6] [ref=e115]
+        - link "Upgrade" [ref=e117]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e118] [cursor=pointer]: Upgrade
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e126] [cursor=pointer]:
+              - img "profile picture" [ref=e127]
+              - paragraph [ref=e128]: mandamani user
+              - generic [ref=e129]: 
+      - navigation "Topbar Menu" [ref=e131]:
+        - list [ref=e132]:
+          - listitem [ref=e133] [cursor=pointer]:
+            - link "Apply" [ref=e134]:
+              - /url: "#"
+          - listitem [ref=e135] [cursor=pointer]:
+            - link "My Leave" [ref=e136]:
+              - /url: "#"
+          - listitem [ref=e137] [cursor=pointer]:
+            - generic [ref=e138]:
+              - text: Entitlements
+              - generic [ref=e139]: 
+          - listitem [ref=e140] [cursor=pointer]:
+            - generic [ref=e141]:
+              - text: Reports
+              - generic [ref=e142]: 
+          - listitem [ref=e143] [cursor=pointer]:
+            - generic [ref=e144]:
+              - text: Configure
+              - generic [ref=e145]: 
+          - listitem [ref=e146] [cursor=pointer]:
+            - link "Leave List" [ref=e147]:
+              - /url: "#"
+          - listitem [ref=e148] [cursor=pointer]:
+            - link "Assign Leave" [ref=e149]:
+              - /url: "#"
+          - button "" [ref=e151] [cursor=pointer]:
+            - generic [ref=e152]: 
+  - generic [ref=e153]:
+    - generic [ref=e156]:
+      - generic [ref=e157]:
+        - heading "Leave Entitlements and Usage Report" [level=5] [ref=e159]
+        - button "" [ref=e162] [cursor=pointer]:
+          - generic [ref=e163]: 
+      - separator [ref=e164]
+      - generic [ref=e166]:
+        - generic [ref=e170]:
+          - generic [ref=e172]: Generate For
+          - generic [ref=e173]:
+            - generic [ref=e177] [cursor=pointer]:
+              - radio "Leave Type" [checked] [ref=e178]
+              - text: Leave Type
+            - generic [ref=e183] [cursor=pointer]:
+              - radio "Employee" [ref=e184]
+              - text: Employee
+        - generic [ref=e187]:
+          - generic [ref=e189]:
+            - generic [ref=e191]: Leave Type
+            - generic [ref=e194] [cursor=pointer]:
+              - generic [ref=e195]: US - Vacation
+              - generic [ref=e197]: 
+          - generic [ref=e199]:
+            - generic [ref=e201]: Leave Period*
+            - generic [ref=e204] [cursor=pointer]:
+              - generic [ref=e205]: 2026-01-01 - 2026-31-12
+              - generic [ref=e207]: 
+          - generic [ref=e209]:
+            - generic [ref=e211]: Location
+            - generic [ref=e214] [cursor=pointer]:
+              - generic [ref=e215]: "-- Select --"
+              - generic [ref=e217]: 
+          - generic [ref=e219]:
+            - generic [ref=e221]: Sub Unit
+            - generic [ref=e224] [cursor=pointer]:
+              - generic [ref=e225]: "-- Select --"
+              - generic [ref=e227]: 
+          - generic [ref=e229]:
+            - generic [ref=e231]: Job Title
+            - generic [ref=e234] [cursor=pointer]:
+              - generic [ref=e235]: Software Engineer
+              - generic [ref=e237]: 
+          - generic [ref=e238]:
+            - paragraph [ref=e239]: Include Past Employees
+            - checkbox [ref=e242]
+        - separator [ref=e244]
+        - generic [ref=e245]:
+          - paragraph [ref=e246]: "* Required"
+          - button "Generate" [ref=e247] [cursor=pointer]
+    - generic [ref=e248]:
+      - paragraph [ref=e249]: OrangeHRM OS 5.8
+      - paragraph [ref=e250]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e251] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
