@@ -1,0 +1,18 @@
+{
+    "servers": {
+        "orangehrm-autohealer": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "ts-node",
+                "-r",
+                "tsconfig-paths/register",
+                "utils/mcp-server.ts"
+            ],
+            "cwd": "c:/Users/epicr/Downloads/Playwright_Portable/Projects/OrangeHRMProject",
+            "env": {
+                "HEADLESS": "false"
+            }
+        }
+    }
+}

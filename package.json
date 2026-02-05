@@ -1,0 +1,27 @@
+{
+  "name": "orangehrm-automation-root",
+  "version": "1.0.0",
+  "description": "Merged Automation Project",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "clean": "npx ts-node --project OrangeHRMProject/tsconfig.json OrangeHRMProject/utils/clean-results.ts",
+    "test": "npx playwright test --config OrangeHRMProject/playwright.config.ts",
+    "test:headed": "npx playwright test --headed --config OrangeHRMProject/playwright.config.ts",
+    "report": "npx playwright show-report OrangeHRMProject/selfheal-process/reports/playwright-report",
+    "mcp-server": "npx ts-node --project OrangeHRMProject/tsconfig.json OrangeHRMProject/utils/mcp-server.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.2",
+    "@playwright/test": "^1.57.0",
+    "async-mutex": "^0.5.0",
+    "ts-morph": "^27.0.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3",
+    "zod": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.6",
+    "allure-playwright": "^3.4.5"
+  }
+}

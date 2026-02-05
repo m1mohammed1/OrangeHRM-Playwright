@@ -1,0 +1,293 @@
+name: OrangeHRM Professional Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+    inputs:
+      browser:
+        description: 'Select Browser'
+        default: 'chromium'
+        type: choice
+        options: [chromium, firefox, webkit]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  BROWSER: ${{ github.event.inputs.browser || 'chromium' }}
+  CI: true
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  foundation:
+    name: 1. Foundation Setup
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps ${{ env.BROWSER }}
+
+      - name: Run Foundation Tests
+        continue-on-error: true
+        run: |
+          npx playwright test --project=Foundation \
+            --config OrangeHRMProject/playwright.config.ts \
+            --reporter=line,allure-playwright
+
+      - name: Upload Foundation Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-foundation
+          path: allure-results
+          retention-days: 1
+
+  regression_matrix:
+    name: 2. Reg - ${{ matrix.test_file }}
+    needs: foundation
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false 
+      max-parallel: 20
+      matrix:
+        test_file:
+          - "Admin_Configuration_Test.spec.ts"
+          - "Admin_Job_Test.spec.ts"
+          - "Admin_Nationalities_Test.spec.ts"
+          - "Admin_Organization_Test.spec.ts"
+          - "Admin_Qualifications_Test.spec.ts"
+          - "Admin_User_Management_Test.spec.ts"
+
+          - "PIM_Configuration_Test.spec.ts"
+          - "PIM_Employee_Test.spec.ts"
+          - "PIM_EmployeeDetails_Test.spec.ts"
+          - "PIM_Reports_Test.spec.ts"
+
+          - "Leave_ApplyLeave_Test.spec.ts"
+          - "Leave_Configuration_Test.spec.ts"
+          - "Leave_Entitlements_Test.spec.ts"
+          - "Leave_LeaveList_Test.spec.ts"
+          - "Leave_Operations_Test.spec.ts"
+          - "Leave_Reports_Test.spec.ts"
+
+          - "Time_Attendance_Test.spec.ts"
+          - "Time_BusinessLogic_Test.spec.ts"
+          - "Time_Configuration_Test.spec.ts"
+          - "Time_ProjectInfo_Test.spec.ts"
+          - "Time_Reports_Test.spec.ts"
+          - "Time_Timesheets_Test.spec.ts"
+
+          - "Recruitment_Vacancies_Test.spec.ts"
+          - "Recruitment_Candidate_E2E_Test.spec.ts"
+          - "Recruitment_CandidateWorkflow_Test.spec.ts"
+          - "Recruitment_Search_And_Data_Test.spec.ts"
+
+          - "Performance_Configuration_Test.spec.ts"
+          - "Performance_Evaluation_Test.spec.ts"
+          - "Performance_MyReviews_Test.spec.ts"
+          - "Performance_Reports_Test.spec.ts"
+          - "Performance_Reviews_Test.spec.ts"
+
+          - "Claim_Advanced_Test.spec.ts"
+          - "Claim_Configuration_Test.spec.ts"
+          - "Claim_EmployeeClaims_Test.spec.ts"
+          - "Claim_Operations_Test.spec.ts"
+
+          - "Dashboard_Advanced_Test.spec.ts"
+          - "Dashboard_UserActions_Test.spec.ts"
+          - "Dashboard_Widgets_Test.spec.ts"
+
+          - "Maintenance_AccessRecords_Test.spec.ts"
+          - "Maintenance_Authentication_Test.spec.ts"
+          - "Maintenance_PurgeRecords_Test.spec.ts"
+          - "Maintenance_Safety_Test.spec.ts"
+          
+          - "Smoke_Authentication_and_Navigation.spec.ts"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps ${{ env.BROWSER }}
+
+      - name: Run Regression - ${{ matrix.test_file }}
+        continue-on-error: true
+        run: |
+          npx playwright test "${{ matrix.test_file }}" \
+            --config OrangeHRMProject/playwright.config.ts \
+            --project=Regression \
+            --reporter=line,allure-playwright
+
+      - name: Upload Regression Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-regression-${{ matrix.test_file }}
+          path: allure-results
+          retention-days: 1
+
+  cleanup_matrix:
+    name: 3. Cleanup - ${{ matrix.cleanup_file }}
+    needs: [regression_matrix]
+    runs-on: ubuntu-latest
+    if: always()
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        cleanup_file:
+          - "Admin_Cleaning.spec.ts"
+          - "Buzz_Cleaning.spec.ts"
+          - "Claim_Cleaning.spec.ts"
+          - "Performance_Cleaning.spec.ts"
+          - "PIM_Cleaning.spec.ts"
+          - "Recruitment_Cleaning.spec.ts"
+          - "Time_Cleaning.spec.ts"
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps ${{ env.BROWSER }}
+
+      - name: Run Cleanup - ${{ matrix.cleanup_file }}
+        continue-on-error: true
+        run: |
+          npx playwright test "${{ matrix.cleanup_file }}" \
+            --config OrangeHRMProject/playwright.config.ts \
+            --project=Cleanup \
+            --reporter=line,allure-playwright
+
+      - name: Upload Cleanup Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-cleanup-${{ matrix.cleanup_file }}
+          path: allure-results
+          retention-days: 1
+
+  report:
+    name: 4. Generate Final Report
+    needs: [ foundation, regression_matrix, cleanup_matrix ]
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Download All Artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: all-results
+          pattern: allure-results-*
+          merge-multiple: true
+
+      # 1. تحميل الهستوري القديم في مجلد مستقل
+      - name: Get Allure History
+        uses: actions/checkout@v4
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      # 2. الخطوة السحرية: تنظيف وتجهيز الملفات وحذف .git المسبب للمشاكل
+      - name: Prepare Allure Results
+        run: |
+          mkdir -p allure-results
+          mkdir -p allure-history
+          
+          # إزالة مجلد .git من الهستوري القديم لتجنب خطأ EACCES
+          if [ -d "gh-pages" ]; then
+            rm -rf gh-pages/.git
+          fi
+
+          # نسخ الهستوري القديم (فقط المجلد history)
+          if [ -d "gh-pages/history" ]; then
+            cp -r gh-pages/history/* allure-history/
+          fi
+          
+          # نسخ النتائج الجديدة
+          cp -r all-results/* allure-results/
+          
+          # إنشاء ملف Executor
+          cat > allure-results/executor.json <<EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "buildOrder": ${{ github.run_number }},
+            "buildName": "Run #${{ github.run_number }}"
+          }
+          EOF
+
+      # 3. توليد التقرير
+      - name: Generate Allure Report
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: allure-results
+          allure_history: allure-history
+          keep_reports: 20
+
+      # 4. النشر (بدون force_orphan وبأمان)
+      - name: Deploy to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: allure-history
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Job Summary
+        if: always()
+        run: |
+          echo "### Test Execution Summary :rocket:" >> $GITHUB_STEP_SUMMARY
+          echo "All tests ran regardless of status." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Report Ready: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,16 @@
+node_modules/
+.env
+.DS_Store
+dist/
+test-results/
+playwright-report/
+blob-report/
+/playwright/.cache/
+auth.json
+.vscode/
+allure-results/
+MCP_SERVER_REPORTS/
+**/selfheal-process/sandbox/
+**/selfheal-process/test-results/
+**/selfheal-process/reports/
+data/storageState.json
