@@ -1,0 +1,7 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Employee Name
+TYPE ACTION: Username
+TYPE ACTION: Password
+TYPE ACTION: Confirm Password
+TYPE ACTION: Username

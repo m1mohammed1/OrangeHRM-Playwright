@@ -1,0 +1,173 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - generic [ref=e113]:
+            - heading "Time" [level=6] [ref=e114]
+            - heading "/ Timesheets" [level=6] [ref=e115]
+        - link "Upgrade" [ref=e117]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e118] [cursor=pointer]: Upgrade
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e126] [cursor=pointer]:
+              - img "profile picture" [ref=e127]
+              - paragraph [ref=e128]: manda user
+              - generic [ref=e129]: 
+      - navigation "Topbar Menu" [ref=e131]:
+        - list [ref=e132]:
+          - listitem [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]:
+              - text: Timesheets
+              - generic [ref=e135]: 
+          - listitem [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - text: Attendance
+              - generic [ref=e138]: 
+          - listitem [ref=e139] [cursor=pointer]:
+            - generic [ref=e140]:
+              - text: Reports
+              - generic [ref=e141]: 
+          - listitem [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]:
+              - text: Project Info
+              - generic [ref=e144]: 
+          - button "" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]: 
+  - generic [ref=e148]:
+    - generic [ref=e150]:
+      - generic [ref=e151]:
+        - heading "Select Employee" [level=6] [ref=e152]
+        - separator [ref=e153]
+        - generic [ref=e154]:
+          - generic [ref=e158]:
+            - generic [ref=e160]: Employee Name*
+            - textbox "Type for hints..." [ref=e164]: Script Automation Tester
+          - separator [ref=e165]
+          - generic [ref=e166]:
+            - paragraph [ref=e167]: "* Required"
+            - button "View" [ref=e168] [cursor=pointer]
+      - generic [ref=e169]:
+        - heading "Timesheets Pending Action" [level=6] [ref=e171]
+        - generic [ref=e172]:
+          - separator [ref=e173]
+          - generic [ref=e175]: (5) Records Found
+        - table [ref=e177]:
+          - rowgroup [ref=e178]:
+            - row "Employee Name Timesheet Period Actions" [ref=e179]:
+              - columnheader "Employee Name" [ref=e180]
+              - columnheader "Timesheet Period" [ref=e181]
+              - columnheader "Actions" [ref=e182]
+          - rowgroup [ref=e183]:
+            - row "A8DCo 4Ys 010Z 2026-02-02 - 2026-08-02 View" [ref=e185]:
+              - cell "A8DCo 4Ys 010Z" [ref=e186]:
+                - generic [ref=e187]: A8DCo 4Ys 010Z
+              - cell "2026-02-02 - 2026-08-02" [ref=e188]:
+                - generic [ref=e189]: 2026-02-02 - 2026-08-02
+              - cell "View" [ref=e190]:
+                - button "View" [ref=e192] [cursor=pointer]
+            - row "yedghjb1 ru84 90jsnd 2026-02-02 - 2026-08-02 View" [ref=e194]:
+              - cell "yedghjb1 ru84 90jsnd" [ref=e195]:
+                - generic [ref=e196]: yedghjb1 ru84 90jsnd
+              - cell "2026-02-02 - 2026-08-02" [ref=e197]:
+                - generic [ref=e198]: 2026-02-02 - 2026-08-02
+              - cell "View" [ref=e199]:
+                - button "View" [ref=e201] [cursor=pointer]
+            - row "manda akhil user 2023-16-01 - 2023-22-01 View" [ref=e203]:
+              - cell "manda akhil user" [ref=e204]:
+                - generic [ref=e205]: manda akhil user
+              - cell "2023-16-01 - 2023-22-01" [ref=e206]:
+                - generic [ref=e207]: 2023-16-01 - 2023-22-01
+              - cell "View" [ref=e208]:
+                - button "View" [ref=e210] [cursor=pointer]
+            - row "manda akhil user 2022-15-08 - 2022-21-08 View" [ref=e212]:
+              - cell "manda akhil user" [ref=e213]:
+                - generic [ref=e214]: manda akhil user
+              - cell "2022-15-08 - 2022-21-08" [ref=e215]:
+                - generic [ref=e216]: 2022-15-08 - 2022-21-08
+              - cell "View" [ref=e217]:
+                - button "View" [ref=e219] [cursor=pointer]
+            - row "manda akhil user 2020-14-09 - 2020-20-09 View" [ref=e221]:
+              - cell "manda akhil user" [ref=e222]:
+                - generic [ref=e223]: manda akhil user
+              - cell "2020-14-09 - 2020-20-09" [ref=e224]:
+                - generic [ref=e225]: 2020-14-09 - 2020-20-09
+              - cell "View" [ref=e226]:
+                - button "View" [ref=e228] [cursor=pointer]
+    - generic [ref=e230]:
+      - paragraph [ref=e231]: OrangeHRM OS 5.8
+      - paragraph [ref=e232]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e233] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```

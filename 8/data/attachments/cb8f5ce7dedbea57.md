@@ -1,0 +1,154 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - generic [ref=e113]:
+            - heading "Attendance" [level=6] [ref=e114]
+            - heading "/ Attendance" [level=6] [ref=e115]
+        - link "Upgrade" [ref=e117]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e118] [cursor=pointer]: Upgrade
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e126] [cursor=pointer]:
+              - img "profile picture" [ref=e127]
+              - paragraph [ref=e128]: manda user
+              - generic [ref=e129]: 
+      - navigation "Topbar Menu" [ref=e131]:
+        - list [ref=e132]:
+          - listitem [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]:
+              - text: Timesheets
+              - generic [ref=e135]: 
+          - listitem [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - text: Attendance
+              - generic [ref=e138]: 
+          - listitem [ref=e139] [cursor=pointer]:
+            - generic [ref=e140]:
+              - text: Reports
+              - generic [ref=e141]: 
+          - listitem [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]:
+              - text: Project Info
+              - generic [ref=e144]: 
+          - button "" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]: 
+  - generic [ref=e148]:
+    - generic [ref=e151]:
+      - heading "Punch In" [level=6] [ref=e152]
+      - separator [ref=e153]
+      - generic [ref=e155]:
+        - generic [ref=e157]:
+          - generic [ref=e159]:
+            - generic [ref=e161]: Date*
+            - generic [ref=e164]:
+              - textbox "yyyy-dd-mm" [ref=e165]: 2026-15-07
+              - generic [ref=e166] [cursor=pointer]: 
+          - generic [ref=e168]:
+            - generic [ref=e170]: Time*
+            - generic [ref=e172]:
+              - generic [ref=e173]:
+                - textbox "hh:mm" [active] [ref=e174]: 09:00 AM
+                - generic [ref=e175] [cursor=pointer]: 
+              - alert [ref=e176]:
+                - generic [ref=e177]:
+                  - text: 
+                  - textbox [ref=e178]: "07"
+                  - text: 
+                - generic [ref=e179]: ":"
+                - generic [ref=e180]:
+                  - text: 
+                  - textbox [ref=e181]: "06"
+                  - text: 
+                - generic [ref=e182]:
+                  - generic [ref=e183]:
+                    - radio [ref=e184] [cursor=pointer]
+                    - generic [ref=e185]: AM
+                  - generic [ref=e186]:
+                    - radio [checked] [ref=e187] [cursor=pointer]
+                    - generic [ref=e188]: PM
+        - generic [ref=e192]:
+          - generic [ref=e194]: Note
+          - textbox "Type here" [ref=e196]
+        - separator [ref=e197]
+        - generic [ref=e198]:
+          - paragraph [ref=e199]: "* Required"
+          - button "In" [ref=e200] [cursor=pointer]
+    - generic [ref=e201]:
+      - paragraph [ref=e202]: OrangeHRM OS 5.8
+      - paragraph [ref=e203]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e204] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
