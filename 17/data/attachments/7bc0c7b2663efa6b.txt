@@ -1,0 +1,5 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Key Performance Indicator
+TYPE ACTION: Minimum Rating
+TYPE ACTION: Maximum Rating

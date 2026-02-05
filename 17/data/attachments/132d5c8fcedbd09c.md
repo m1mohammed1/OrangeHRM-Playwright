@@ -1,0 +1,169 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic:
+      - complementary [ref=e4]:
+        - navigation "Sidepanel" [ref=e5]:
+          - generic [ref=e6]:
+            - link "client brand banner" [ref=e7] [cursor=pointer]:
+              - /url: https://www.orangehrm.com/
+              - img "client brand banner" [ref=e9]
+            - text: 
+          - generic [ref=e10]:
+            - generic [ref=e11]:
+              - generic [ref=e12]:
+                - textbox "Search" [ref=e15]
+                - button "" [ref=e16] [cursor=pointer]:
+                  - generic [ref=e17]: 
+              - separator [ref=e18]
+            - list [ref=e19]:
+              - listitem [ref=e20]:
+                - link "Admin" [ref=e21] [cursor=pointer]:
+                  - /url: /web/index.php/admin/viewAdminModule
+                  - generic [ref=e24]: Admin
+              - listitem [ref=e25]:
+                - link "PIM" [ref=e26] [cursor=pointer]:
+                  - /url: /web/index.php/pim/viewPimModule
+                  - generic [ref=e40]: PIM
+              - listitem [ref=e41]:
+                - link "Leave" [ref=e42] [cursor=pointer]:
+                  - /url: /web/index.php/leave/viewLeaveModule
+                  - generic [ref=e45]: Leave
+              - listitem [ref=e46]:
+                - link "Time" [ref=e47] [cursor=pointer]:
+                  - /url: /web/index.php/time/viewTimeModule
+                  - generic [ref=e53]: Time
+              - listitem [ref=e54]:
+                - link "Recruitment" [ref=e55] [cursor=pointer]:
+                  - /url: /web/index.php/recruitment/viewRecruitmentModule
+                  - generic [ref=e61]: Recruitment
+              - listitem [ref=e62]:
+                - link "My Info" [ref=e63] [cursor=pointer]:
+                  - /url: /web/index.php/pim/viewMyDetails
+                  - generic [ref=e69]: My Info
+              - listitem [ref=e70]:
+                - link "Performance" [ref=e71] [cursor=pointer]:
+                  - /url: /web/index.php/performance/viewPerformanceModule
+                  - generic [ref=e79]: Performance
+              - listitem [ref=e80]:
+                - link "Dashboard" [ref=e81] [cursor=pointer]:
+                  - /url: /web/index.php/dashboard/index
+                  - generic [ref=e84]: Dashboard
+              - listitem [ref=e85]:
+                - link "Directory" [ref=e86] [cursor=pointer]:
+                  - /url: /web/index.php/directory/viewDirectory
+                  - generic [ref=e89]: Directory
+              - listitem [ref=e90]:
+                - link "Maintenance" [ref=e91] [cursor=pointer]:
+                  - /url: /web/index.php/maintenance/viewMaintenanceModule
+                  - generic [ref=e95]: Maintenance
+              - listitem [ref=e96]:
+                - link "Claim" [ref=e97] [cursor=pointer]:
+                  - /url: /web/index.php/claim/viewClaimModule
+                  - img [ref=e100]
+                  - generic [ref=e104]: Claim
+              - listitem [ref=e105]:
+                - link "Buzz" [ref=e106] [cursor=pointer]:
+                  - /url: /web/index.php/buzz/viewBuzz
+                  - generic [ref=e109]: Buzz
+      - banner [ref=e110]:
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - text: 
+            - generic [ref=e113]:
+              - heading "Time" [level=6] [ref=e114]
+              - heading "/ Timesheets" [level=6] [ref=e115]
+          - link "Upgrade" [ref=e117]:
+            - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+            - button "Upgrade" [ref=e118] [cursor=pointer]: Upgrade
+          - list [ref=e124]:
+            - listitem [ref=e125]:
+              - generic [ref=e126] [cursor=pointer]:
+                - img "profile picture" [ref=e127]
+                - paragraph [ref=e128]: mandaExperimentalExperimenta user
+                - generic [ref=e129]: 
+        - navigation "Topbar Menu" [ref=e131]:
+          - list [ref=e132]:
+            - listitem [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]:
+                - text: Timesheets
+                - generic [ref=e135]: 
+            - listitem [ref=e136] [cursor=pointer]:
+              - generic [ref=e137]:
+                - text: Attendance
+                - generic [ref=e138]: 
+            - listitem [ref=e139] [cursor=pointer]:
+              - generic [ref=e140]:
+                - text: Reports
+                - generic [ref=e141]: 
+            - listitem [ref=e142] [cursor=pointer]:
+              - generic [ref=e143]:
+                - text: Project Info
+                - generic [ref=e144]: 
+            - button "" [ref=e146] [cursor=pointer]:
+              - generic [ref=e147]: 
+    - generic [ref=e148]:
+      - generic [ref=e151]:
+        - generic [ref=e152]:
+          - heading "My Timesheet" [level=6] [ref=e154]
+          - generic [ref=e156]:
+            - paragraph [ref=e157]: Timesheet Period
+            - button "" [ref=e158] [cursor=pointer]:
+              - generic [ref=e159]: 
+            - generic [ref=e163]:
+              - textbox "yyyy-dd-mm" [ref=e164]: 2026-02-02 to 2026-08-02
+              - generic [ref=e165] [cursor=pointer]: 
+            - button "" [ref=e166] [cursor=pointer]:
+              - generic [ref=e167]: 
+        - table [ref=e169]:
+          - rowgroup [ref=e170]:
+            - row "Project Activity 2 Mon 3 Tue 4 Wed 5 Thu 6 Fri 7 Sat 8 Sun Total" [ref=e171]:
+              - columnheader "Project" [ref=e172]
+              - columnheader "Activity" [ref=e173]
+              - columnheader "2 Mon" [ref=e174]:
+                - generic [ref=e175]: "2"
+                - text: Mon
+              - columnheader "3 Tue" [ref=e176]:
+                - generic [ref=e177]: "3"
+                - text: Tue
+              - columnheader "4 Wed" [ref=e178]:
+                - generic [ref=e179]: "4"
+                - text: Wed
+              - columnheader "5 Thu" [ref=e180]:
+                - generic [ref=e181]: "5"
+                - text: Thu
+              - columnheader "6 Fri" [ref=e182]:
+                - generic [ref=e183]: "6"
+                - text: Fri
+              - columnheader "7 Sat" [ref=e184]:
+                - generic [ref=e185]: "7"
+                - text: Sat
+              - columnheader "8 Sun" [ref=e186]:
+                - generic [ref=e187]: "8"
+                - text: Sun
+              - columnheader "Total" [ref=e188]
+          - rowgroup [ref=e189]:
+            - row "No Records Found" [ref=e190]:
+              - cell "No Records Found" [ref=e191]
+        - generic [ref=e192]:
+          - paragraph [ref=e194]: "Status: Not Submitted"
+          - generic [ref=e195]:
+            - button "Edit" [ref=e196] [cursor=pointer]
+            - button "Submit" [ref=e197] [cursor=pointer]
+      - generic [ref=e198]:
+        - paragraph [ref=e199]: OrangeHRM OS 5.8
+        - paragraph [ref=e200]:
+          - text: © 2005 - 2026
+          - link "OrangeHRM, Inc" [ref=e201] [cursor=pointer]:
+            - /url: http://www.orangehrm.com
+          - text: . All rights reserved.
+  - generic [ref=e203] [cursor=pointer]:
+    - generic [ref=e204]:
+      - generic [ref=e207]: 
+      - generic [ref=e208]:
+        - paragraph [ref=e209]: Info
+        - paragraph [ref=e210]: No Records Found
+    - button "×" [ref=e212]
+```
