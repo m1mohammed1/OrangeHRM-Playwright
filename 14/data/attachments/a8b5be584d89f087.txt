@@ -1,0 +1,6 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Name
+TYPE ACTION: Minimum Salary
+TYPE ACTION: Maximum Salary
+TYPE ACTION: Minimum Salary

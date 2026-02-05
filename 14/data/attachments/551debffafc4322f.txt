@@ -1,0 +1,8 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Name
+TYPE ACTION: City
+TYPE ACTION: Address
+TYPE ACTION: Zip/Postal Code
+TYPE ACTION: Phone
+TYPE ACTION: Name

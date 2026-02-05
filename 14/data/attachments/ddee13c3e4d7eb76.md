@@ -1,0 +1,506 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic:
+    - complementary [ref=e4]:
+      - navigation "Sidepanel" [ref=e5]:
+        - generic [ref=e6]:
+          - link "client brand banner" [ref=e7] [cursor=pointer]:
+            - /url: https://www.orangehrm.com/
+            - img "client brand banner" [ref=e9]
+          - text: 
+        - generic [ref=e10]:
+          - generic [ref=e11]:
+            - generic [ref=e12]:
+              - textbox "Search" [ref=e15]
+              - button "" [ref=e16] [cursor=pointer]:
+                - generic [ref=e17]: 
+            - separator [ref=e18]
+          - list [ref=e19]:
+            - listitem [ref=e20]:
+              - link "Admin" [ref=e21] [cursor=pointer]:
+                - /url: /web/index.php/admin/viewAdminModule
+                - generic [ref=e24]: Admin
+            - listitem [ref=e25]:
+              - link "PIM" [ref=e26] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewPimModule
+                - generic [ref=e40]: PIM
+            - listitem [ref=e41]:
+              - link "Leave" [ref=e42] [cursor=pointer]:
+                - /url: /web/index.php/leave/viewLeaveModule
+                - generic [ref=e45]: Leave
+            - listitem [ref=e46]:
+              - link "Time" [ref=e47] [cursor=pointer]:
+                - /url: /web/index.php/time/viewTimeModule
+                - generic [ref=e53]: Time
+            - listitem [ref=e54]:
+              - link "Recruitment" [ref=e55] [cursor=pointer]:
+                - /url: /web/index.php/recruitment/viewRecruitmentModule
+                - generic [ref=e61]: Recruitment
+            - listitem [ref=e62]:
+              - link "My Info" [ref=e63] [cursor=pointer]:
+                - /url: /web/index.php/pim/viewMyDetails
+                - generic [ref=e69]: My Info
+            - listitem [ref=e70]:
+              - link "Performance" [ref=e71] [cursor=pointer]:
+                - /url: /web/index.php/performance/viewPerformanceModule
+                - generic [ref=e79]: Performance
+            - listitem [ref=e80]:
+              - link "Dashboard" [ref=e81] [cursor=pointer]:
+                - /url: /web/index.php/dashboard/index
+                - generic [ref=e84]: Dashboard
+            - listitem [ref=e85]:
+              - link "Directory" [ref=e86] [cursor=pointer]:
+                - /url: /web/index.php/directory/viewDirectory
+                - generic [ref=e89]: Directory
+            - listitem [ref=e90]:
+              - link "Maintenance" [ref=e91] [cursor=pointer]:
+                - /url: /web/index.php/maintenance/viewMaintenanceModule
+                - generic [ref=e95]: Maintenance
+            - listitem [ref=e96]:
+              - link "Claim" [ref=e97] [cursor=pointer]:
+                - /url: /web/index.php/claim/viewClaimModule
+                - img [ref=e100]
+                - generic [ref=e104]: Claim
+            - listitem [ref=e105]:
+              - link "Buzz" [ref=e106] [cursor=pointer]:
+                - /url: /web/index.php/buzz/viewBuzz
+                - generic [ref=e109]: Buzz
+    - banner [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - text: 
+          - generic [ref=e113]:
+            - heading "Attendance" [level=6] [ref=e114]
+            - heading "/ Attendance" [level=6] [ref=e115]
+        - link "Upgrade" [ref=e117]:
+          - /url: https://orangehrm.com/open-source/upgrade-to-advanced
+          - button "Upgrade" [ref=e118] [cursor=pointer]: Upgrade
+        - list [ref=e124]:
+          - listitem [ref=e125]:
+            - generic [ref=e126] [cursor=pointer]:
+              - img "profile picture" [ref=e127]
+              - paragraph [ref=e128]: mandaExperimental user
+              - generic [ref=e129]: 
+      - navigation "Topbar Menu" [ref=e131]:
+        - list [ref=e132]:
+          - listitem [ref=e133] [cursor=pointer]:
+            - generic [ref=e134]:
+              - text: Timesheets
+              - generic [ref=e135]: 
+          - listitem [ref=e136] [cursor=pointer]:
+            - generic [ref=e137]:
+              - text: Attendance
+              - generic [ref=e138]: 
+          - listitem [ref=e139] [cursor=pointer]:
+            - generic [ref=e140]:
+              - text: Reports
+              - generic [ref=e141]: 
+          - listitem [ref=e142] [cursor=pointer]:
+            - generic [ref=e143]:
+              - text: Project Info
+              - generic [ref=e144]: 
+          - button "" [ref=e146] [cursor=pointer]:
+            - generic [ref=e147]: 
+  - generic [ref=e148]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - heading "Employee Attendance Records" [level=5] [ref=e153]
+          - button "" [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]: 
+        - separator [ref=e158]
+        - generic [ref=e160]:
+          - generic [ref=e162]:
+            - generic [ref=e164]:
+              - generic [ref=e166]: Employee Name
+              - generic [ref=e168]:
+                - textbox "Type for hints..." [active] [ref=e170]: Script Automation Tester
+                - listbox [ref=e171]:
+                  - option "No Records Found" [ref=e172] [cursor=pointer]
+            - generic [ref=e174]:
+              - generic [ref=e176]: Date*
+              - generic [ref=e179]:
+                - textbox "yyyy-dd-mm" [ref=e180]: 2026-05-02
+                - generic [ref=e181] [cursor=pointer]: 
+          - separator [ref=e182]
+          - generic [ref=e183]:
+            - paragraph [ref=e184]: "* Required"
+            - button "View" [ref=e185] [cursor=pointer]
+      - generic [ref=e186]:
+        - generic [ref=e189]: (97) Records Found
+        - table [ref=e191]:
+          - rowgroup [ref=e192]:
+            - row "Employee Name Total Duration (Hours) Actions" [ref=e193]:
+              - columnheader "Employee Name" [ref=e194]
+              - columnheader "Total Duration (Hours)" [ref=e195]
+              - columnheader "Actions" [ref=e196]
+          - rowgroup [ref=e197]:
+            - row "A8DCo 010Z 0.00 View" [ref=e199]:
+              - cell "A8DCo 010Z" [ref=e200]:
+                - generic [ref=e201]: A8DCo 010Z
+              - cell "0.00" [ref=e202]:
+                - generic [ref=e203]: "0.00"
+              - cell "View" [ref=e204]:
+                - button "View" [ref=e206] [cursor=pointer]
+            - row "123445 444444 0.00 View" [ref=e208]:
+              - cell "123445 444444" [ref=e209]:
+                - generic [ref=e210]: 123445 444444
+              - cell "0.00" [ref=e211]:
+                - generic [ref=e212]: "0.00"
+              - cell "View" [ref=e213]:
+                - button "View" [ref=e215] [cursor=pointer]
+            - row "99N75 5TlV 0.00 View" [ref=e217]:
+              - cell "99N75 5TlV" [ref=e218]:
+                - generic [ref=e219]: 99N75 5TlV
+              - cell "0.00" [ref=e220]:
+                - generic [ref=e221]: "0.00"
+              - cell "View" [ref=e222]:
+                - button "View" [ref=e224] [cursor=pointer]
+            - row "yedghjb1 90jsnd 0.00 View" [ref=e226]:
+              - cell "yedghjb1 90jsnd" [ref=e227]:
+                - generic [ref=e228]: yedghjb1 90jsnd
+              - cell "0.00" [ref=e229]:
+                - generic [ref=e230]: "0.00"
+              - cell "View" [ref=e231]:
+                - button "View" [ref=e233] [cursor=pointer]
+            - row "Ranga Akunuri 0.00 View" [ref=e235]:
+              - cell "Ranga Akunuri" [ref=e236]:
+                - generic [ref=e237]: Ranga Akunuri
+              - cell "0.00" [ref=e238]:
+                - generic [ref=e239]: "0.00"
+              - cell "View" [ref=e240]:
+                - button "View" [ref=e242] [cursor=pointer]
+            - row "Timothy Amiano 0.00 View" [ref=e244]:
+              - cell "Timothy Amiano" [ref=e245]:
+                - generic [ref=e246]: Timothy Amiano
+              - cell "0.00" [ref=e247]:
+                - generic [ref=e248]: "0.00"
+              - cell "View" [ref=e249]:
+                - button "View" [ref=e251] [cursor=pointer]
+            - row "Peter Anderson 0.00 View" [ref=e253]:
+              - cell "Peter Anderson" [ref=e254]:
+                - generic [ref=e255]: Peter Anderson
+              - cell "0.00" [ref=e256]:
+                - generic [ref=e257]: "0.00"
+              - cell "View" [ref=e258]:
+                - button "View" [ref=e260] [cursor=pointer]
+            - row "Ravi B 0.00 View" [ref=e262]:
+              - cell "Ravi B" [ref=e263]:
+                - generic [ref=e264]: Ravi B
+              - cell "0.00" [ref=e265]:
+                - generic [ref=e266]: "0.00"
+              - cell "View" [ref=e267]:
+                - button "View" [ref=e269] [cursor=pointer]
+            - row "Thomas Benny 0.00 View" [ref=e271]:
+              - cell "Thomas Benny" [ref=e272]:
+                - generic [ref=e273]: Thomas Benny
+              - cell "0.00" [ref=e274]:
+                - generic [ref=e275]: "0.00"
+              - cell "View" [ref=e276]:
+                - button "View" [ref=e278] [cursor=pointer]
+            - row "Amelia Brown 0.00 View" [ref=e280]:
+              - cell "Amelia Brown" [ref=e281]:
+                - generic [ref=e282]: Amelia Brown
+              - cell "0.00" [ref=e283]:
+                - generic [ref=e284]: "0.00"
+              - cell "View" [ref=e285]:
+                - button "View" [ref=e287] [cursor=pointer]
+            - row "James Butler 0.00 View" [ref=e289]:
+              - cell "James Butler" [ref=e290]:
+                - generic [ref=e291]: James Butler
+              - cell "0.00" [ref=e292]:
+                - generic [ref=e293]: "0.00"
+              - cell "View" [ref=e294]:
+                - button "View" [ref=e296] [cursor=pointer]
+            - row "Charles Carter 0.00 View" [ref=e298]:
+              - cell "Charles Carter" [ref=e299]:
+                - generic [ref=e300]: Charles Carter
+              - cell "0.00" [ref=e301]:
+                - generic [ref=e302]: "0.00"
+              - cell "View" [ref=e303]:
+                - button "View" [ref=e305] [cursor=pointer]
+            - row "Rahul Das 0.00 View" [ref=e307]:
+              - cell "Rahul Das" [ref=e308]:
+                - generic [ref=e309]: Rahul Das
+              - cell "0.00" [ref=e310]:
+                - generic [ref=e311]: "0.00"
+              - cell "View" [ref=e312]:
+                - button "View" [ref=e314] [cursor=pointer]
+            - row "Rahul Das 0.00 View" [ref=e316]:
+              - cell "Rahul Das" [ref=e317]:
+                - generic [ref=e318]: Rahul Das
+              - cell "0.00" [ref=e319]:
+                - generic [ref=e320]: "0.00"
+              - cell "View" [ref=e321]:
+                - button "View" [ref=e323] [cursor=pointer]
+            - row "Rahul Das 0.00 View" [ref=e325]:
+              - cell "Rahul Das" [ref=e326]:
+                - generic [ref=e327]: Rahul Das
+              - cell "0.00" [ref=e328]:
+                - generic [ref=e329]: "0.00"
+              - cell "View" [ref=e330]:
+                - button "View" [ref=e332] [cursor=pointer]
+            - row "Rahul Das 0.00 View" [ref=e334]:
+              - cell "Rahul Das" [ref=e335]:
+                - generic [ref=e336]: Rahul Das
+              - cell "0.00" [ref=e337]:
+                - generic [ref=e338]: "0.00"
+              - cell "View" [ref=e339]:
+                - button "View" [ref=e341] [cursor=pointer]
+            - row "Rahul Das 0.00 View" [ref=e343]:
+              - cell "Rahul Das" [ref=e344]:
+                - generic [ref=e345]: Rahul Das
+              - cell "0.00" [ref=e346]:
+                - generic [ref=e347]: "0.00"
+              - cell "View" [ref=e348]:
+                - button "View" [ref=e350] [cursor=pointer]
+            - row "savina dulvin 0.00 View" [ref=e352]:
+              - cell "savina dulvin" [ref=e353]:
+                - generic [ref=e354]: savina dulvin
+              - cell "0.00" [ref=e355]:
+                - generic [ref=e356]: "0.00"
+              - cell "View" [ref=e357]:
+                - button "View" [ref=e359] [cursor=pointer]
+            - row "savina dulvin 0.00 View" [ref=e361]:
+              - cell "savina dulvin" [ref=e362]:
+                - generic [ref=e363]: savina dulvin
+              - cell "0.00" [ref=e364]:
+                - generic [ref=e365]: "0.00"
+              - cell "View" [ref=e366]:
+                - button "View" [ref=e368] [cursor=pointer]
+            - row "savina dulvin 0.00 View" [ref=e370]:
+              - cell "savina dulvin" [ref=e371]:
+                - generic [ref=e372]: savina dulvin
+              - cell "0.00" [ref=e373]:
+                - generic [ref=e374]: "0.00"
+              - cell "View" [ref=e375]:
+                - button "View" [ref=e377] [cursor=pointer]
+            - row "Joseph Evans 0.00 View" [ref=e379]:
+              - cell "Joseph Evans" [ref=e380]:
+                - generic [ref=e381]: Joseph Evans
+              - cell "0.00" [ref=e382]:
+                - generic [ref=e383]: "0.00"
+              - cell "View" [ref=e384]:
+                - button "View" [ref=e386] [cursor=pointer]
+            - row "savi g 0.00 View" [ref=e388]:
+              - cell "savi g" [ref=e389]:
+                - generic [ref=e390]: savi g
+              - cell "0.00" [ref=e391]:
+                - generic [ref=e392]: "0.00"
+              - cell "View" [ref=e393]:
+                - button "View" [ref=e395] [cursor=pointer]
+            - row "Radha Gupta 0.00 View" [ref=e397]:
+              - cell "Radha Gupta" [ref=e398]:
+                - generic [ref=e399]: Radha Gupta
+              - cell "0.00" [ref=e400]:
+                - generic [ref=e401]: "0.00"
+              - cell "View" [ref=e402]:
+                - button "View" [ref=e404] [cursor=pointer]
+            - row "Russel Hamilton 0.00 View" [ref=e406]:
+              - cell "Russel Hamilton" [ref=e407]:
+                - generic [ref=e408]: Russel Hamilton
+              - cell "0.00" [ref=e409]:
+                - generic [ref=e410]: "0.00"
+              - cell "View" [ref=e411]:
+                - button "View" [ref=e413] [cursor=pointer]
+            - row "Rebecca Harmony 0.00 View" [ref=e415]:
+              - cell "Rebecca Harmony" [ref=e416]:
+                - generic [ref=e417]: Rebecca Harmony
+              - cell "0.00" [ref=e418]:
+                - generic [ref=e419]: "0.00"
+              - cell "View" [ref=e420]:
+                - button "View" [ref=e422] [cursor=pointer]
+            - row "bmrtahvwhibmrtahvwhi hbfqkhjfqbhbfqkhjfqb 0.00 View" [ref=e424]:
+              - cell "bmrtahvwhibmrtahvwhi hbfqkhjfqbhbfqkhjfqb" [ref=e425]:
+                - generic [ref=e426]: bmrtahvwhibmrtahvwhi hbfqkhjfqbhbfqkhjfqb
+              - cell "0.00" [ref=e427]:
+                - generic [ref=e428]: "0.00"
+              - cell "View" [ref=e429]:
+                - button "View" [ref=e431] [cursor=pointer]
+            - row "Sagar hgfkag 0.00 View" [ref=e433]:
+              - cell "Sagar hgfkag" [ref=e434]:
+                - generic [ref=e435]: Sagar hgfkag
+              - cell "0.00" [ref=e436]:
+                - generic [ref=e437]: "0.00"
+              - cell "View" [ref=e438]:
+                - button "View" [ref=e440] [cursor=pointer]
+            - row "hh hh 0.00 View" [ref=e442]:
+              - cell "hh hh" [ref=e443]:
+                - generic [ref=e444]: hh hh
+              - cell "0.00" [ref=e445]:
+                - generic [ref=e446]: "0.00"
+              - cell "View" [ref=e447]:
+                - button "View" [ref=e449] [cursor=pointer]
+            - row "uehwadquzwuehwadquzw hzzdyzwxmwhzzdyzwxmw 0.00 View" [ref=e451]:
+              - cell "uehwadquzwuehwadquzw hzzdyzwxmwhzzdyzwxmw" [ref=e452]:
+                - generic [ref=e453]: uehwadquzwuehwadquzw hzzdyzwxmwhzzdyzwxmw
+              - cell "0.00" [ref=e454]:
+                - generic [ref=e455]: "0.00"
+              - cell "View" [ref=e456]:
+                - button "View" [ref=e458] [cursor=pointer]
+            - row "dhbrukkuzldhbrukkuzl ibuvlwtfsfibuvlwtfsf 0.00 View" [ref=e460]:
+              - cell "dhbrukkuzldhbrukkuzl ibuvlwtfsfibuvlwtfsf" [ref=e461]:
+                - generic [ref=e462]: dhbrukkuzldhbrukkuzl ibuvlwtfsfibuvlwtfsf
+              - cell "0.00" [ref=e463]:
+                - generic [ref=e464]: "0.00"
+              - cell "View" [ref=e465]:
+                - button "View" [ref=e467] [cursor=pointer]
+            - row "Emily Jones 0.00 View" [ref=e469]:
+              - cell "Emily Jones" [ref=e470]:
+                - generic [ref=e471]: Emily Jones
+              - cell "0.00" [ref=e472]:
+                - generic [ref=e473]: "0.00"
+              - cell "View" [ref=e474]:
+                - button "View" [ref=e476] [cursor=pointer]
+            - row "Virat Kohli 0.00 View" [ref=e478]:
+              - cell "Virat Kohli" [ref=e479]:
+                - generic [ref=e480]: Virat Kohli
+              - cell "0.00" [ref=e481]:
+                - generic [ref=e482]: "0.00"
+              - cell "View" [ref=e483]:
+                - button "View" [ref=e485] [cursor=pointer]
+            - row "Tristan L 0.00 View" [ref=e487]:
+              - cell "Tristan L" [ref=e488]:
+                - generic [ref=e489]: Tristan L
+              - cell "0.00" [ref=e490]:
+                - generic [ref=e491]: "0.00"
+              - cell "View" [ref=e492]:
+                - button "View" [ref=e494] [cursor=pointer]
+            - row "sree latha 0.00 View" [ref=e496]:
+              - cell "sree latha" [ref=e497]:
+                - generic [ref=e498]: sree latha
+              - cell "0.00" [ref=e499]:
+                - generic [ref=e500]: "0.00"
+              - cell "View" [ref=e501]:
+                - button "View" [ref=e503] [cursor=pointer]
+            - row "Qwerty LName 0.00 View" [ref=e505]:
+              - cell "Qwerty LName" [ref=e506]:
+                - generic [ref=e507]: Qwerty LName
+              - cell "0.00" [ref=e508]:
+                - generic [ref=e509]: "0.00"
+              - cell "View" [ref=e510]:
+                - button "View" [ref=e512] [cursor=pointer]
+            - row "FName LName 0.00 View" [ref=e514]:
+              - cell "FName LName" [ref=e515]:
+                - generic [ref=e516]: FName LName
+              - cell "0.00" [ref=e517]:
+                - generic [ref=e518]: "0.00"
+              - cell "View" [ref=e519]:
+                - button "View" [ref=e521] [cursor=pointer]
+            - row "rkbqaoxdhzrkbqaoxdhz lszuvmchnilszuvmchni 0.00 View" [ref=e523]:
+              - cell "rkbqaoxdhzrkbqaoxdhz lszuvmchnilszuvmchni" [ref=e524]:
+                - generic [ref=e525]: rkbqaoxdhzrkbqaoxdhz lszuvmchnilszuvmchni
+              - cell "0.00" [ref=e526]:
+                - generic [ref=e527]: "0.00"
+              - cell "View" [ref=e528]:
+                - button "View" [ref=e530] [cursor=pointer]
+            - row "ftndlm ltdyyf 0.00 View" [ref=e532]:
+              - cell "ftndlm ltdyyf" [ref=e533]:
+                - generic [ref=e534]: ftndlm ltdyyf
+              - cell "0.00" [ref=e535]:
+                - generic [ref=e536]: "0.00"
+              - cell "View" [ref=e537]:
+                - button "View" [ref=e539] [cursor=pointer]
+            - row "ftioiu ltpugr 0.00 View" [ref=e541]:
+              - cell "ftioiu ltpugr" [ref=e542]:
+                - generic [ref=e543]: ftioiu ltpugr
+              - cell "0.00" [ref=e544]:
+                - generic [ref=e545]: "0.00"
+              - cell "View" [ref=e546]:
+                - button "View" [ref=e548] [cursor=pointer]
+            - row "ftioiu ltpugr 0.00 View" [ref=e550]:
+              - cell "ftioiu ltpugr" [ref=e551]:
+                - generic [ref=e552]: ftioiu ltpugr
+              - cell "0.00" [ref=e553]:
+                - generic [ref=e554]: "0.00"
+              - cell "View" [ref=e555]:
+                - button "View" [ref=e557] [cursor=pointer]
+            - row "ftioiu ltpugr 0.00 View" [ref=e559]:
+              - cell "ftioiu ltpugr" [ref=e560]:
+                - generic [ref=e561]: ftioiu ltpugr
+              - cell "0.00" [ref=e562]:
+                - generic [ref=e563]: "0.00"
+              - cell "View" [ref=e564]:
+                - button "View" [ref=e566] [cursor=pointer]
+            - row "ftioiu ltpugr 0.00 View" [ref=e568]:
+              - cell "ftioiu ltpugr" [ref=e569]:
+                - generic [ref=e570]: ftioiu ltpugr
+              - cell "0.00" [ref=e571]:
+                - generic [ref=e572]: "0.00"
+              - cell "View" [ref=e573]:
+                - button "View" [ref=e575] [cursor=pointer]
+            - row "ftpjte ltpzkj 0.00 View" [ref=e577]:
+              - cell "ftpjte ltpzkj" [ref=e578]:
+                - generic [ref=e579]: ftpjte ltpzkj
+              - cell "0.00" [ref=e580]:
+                - generic [ref=e581]: "0.00"
+              - cell "View" [ref=e582]:
+                - button "View" [ref=e584] [cursor=pointer]
+            - row "fthyfv ltrhtm 0.00 View" [ref=e586]:
+              - cell "fthyfv ltrhtm" [ref=e587]:
+                - generic [ref=e588]: fthyfv ltrhtm
+              - cell "0.00" [ref=e589]:
+                - generic [ref=e590]: "0.00"
+              - cell "View" [ref=e591]:
+                - button "View" [ref=e593] [cursor=pointer]
+            - row "ftdkux ltsxgy 0.00 View" [ref=e595]:
+              - cell "ftdkux ltsxgy" [ref=e596]:
+                - generic [ref=e597]: ftdkux ltsxgy
+              - cell "0.00" [ref=e598]:
+                - generic [ref=e599]: "0.00"
+              - cell "View" [ref=e600]:
+                - button "View" [ref=e602] [cursor=pointer]
+            - row "fthnvn ltwrrt 0.00 View" [ref=e604]:
+              - cell "fthnvn ltwrrt" [ref=e605]:
+                - generic [ref=e606]: fthnvn ltwrrt
+              - cell "0.00" [ref=e607]:
+                - generic [ref=e608]: "0.00"
+              - cell "View" [ref=e609]:
+                - button "View" [ref=e611] [cursor=pointer]
+            - row "fthnvn ltwrrt 0.00 View" [ref=e613]:
+              - cell "fthnvn ltwrrt" [ref=e614]:
+                - generic [ref=e615]: fthnvn ltwrrt
+              - cell "0.00" [ref=e616]:
+                - generic [ref=e617]: "0.00"
+              - cell "View" [ref=e618]:
+                - button "View" [ref=e620] [cursor=pointer]
+            - row "ftyseo ltzbbp 0.00 View" [ref=e622]:
+              - cell "ftyseo ltzbbp" [ref=e623]:
+                - generic [ref=e624]: ftyseo ltzbbp
+              - cell "0.00" [ref=e625]:
+                - generic [ref=e626]: "0.00"
+              - cell "View" [ref=e627]:
+                - button "View" [ref=e629] [cursor=pointer]
+            - row "ftyseo ltzbbp 0.00 View" [ref=e631]:
+              - cell "ftyseo ltzbbp" [ref=e632]:
+                - generic [ref=e633]: ftyseo ltzbbp
+              - cell "0.00" [ref=e634]:
+                - generic [ref=e635]: "0.00"
+              - cell "View" [ref=e636]:
+                - button "View" [ref=e638] [cursor=pointer]
+            - row "ftyseo ltzbbp 0.00 View" [ref=e640]:
+              - cell "ftyseo ltzbbp" [ref=e641]:
+                - generic [ref=e642]: ftyseo ltzbbp
+              - cell "0.00" [ref=e643]:
+                - generic [ref=e644]: "0.00"
+              - cell "View" [ref=e645]:
+                - button "View" [ref=e647] [cursor=pointer]
+        - navigation "Pagination Navigation" [ref=e649]:
+          - list [ref=e650]:
+            - listitem [ref=e651]:
+              - button "1" [ref=e652] [cursor=pointer]
+            - listitem [ref=e653]:
+              - button "2" [ref=e654] [cursor=pointer]
+            - listitem [ref=e655]:
+              - button "" [ref=e656] [cursor=pointer]:
+                - generic [ref=e657]: 
+    - generic [ref=e658]:
+      - paragraph [ref=e659]: OrangeHRM OS 5.8
+      - paragraph [ref=e660]:
+        - text: © 2005 - 2026
+        - link "OrangeHRM, Inc" [ref=e661] [cursor=pointer]:
+          - /url: http://www.orangehrm.com
+        - text: . All rights reserved.
+```
