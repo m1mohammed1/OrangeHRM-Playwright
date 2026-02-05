@@ -1,0 +1,7 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Host
+TYPE ACTION: Port
+TYPE ACTION: Distinguished Name
+TYPE ACTION: Password
+TYPE ACTION: Base Distinguished Name

@@ -1,0 +1,4 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Employee Name
+TYPE ACTION: Supervisor Reviewer

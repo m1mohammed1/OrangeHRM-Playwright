@@ -1,0 +1,6 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Vacancy Name
+TYPE ACTION: Description
+TYPE ACTION: Hiring Manager
+TYPE ACTION: Number of Positions

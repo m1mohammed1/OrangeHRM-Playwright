@@ -1,0 +1,8 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Shift Name
+TYPE ACTION: From
+TYPE ACTION: To
+TYPE ACTION: Shift Name
+TYPE ACTION: From
+TYPE ACTION: To

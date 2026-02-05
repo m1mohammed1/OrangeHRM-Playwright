@@ -1,0 +1,2 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field

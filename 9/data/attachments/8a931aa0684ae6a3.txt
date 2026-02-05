@@ -1,0 +1,5 @@
+TYPE ACTION: Username Field
+TYPE ACTION: Password Field
+TYPE ACTION: Job Title
+TYPE ACTION: Job Description
+TYPE ACTION: Note
